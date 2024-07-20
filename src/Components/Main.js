@@ -38,10 +38,11 @@ function Main() {
 
             <nav>
                 <div class="nav-left">
-                    <h1>04:{time.hour.toString().padStart(2, '0')}:
-                        {time.minutes.toString().padStart(2, '0')}:
-                        {time.seconds.toString().padStart(2, '0')}</h1>
-                    <h3>скидка 20%, успейте записаться!</h3>
+                    <h2 className="start">28 июля старт:</h2>
+                    <h1><span className="numbers">04</span>:<span className="numbers">{time.hour.toString().padStart(2, '0')}</span>:
+                        <span className="numbers">{time.minutes.toString().padStart(2, '0')}</span>:
+                        <span className="numbers">{time.seconds.toString().padStart(2, '0')}</span></h1>
+                    <h3>скидка 20% при полной оплате, успейте записаться!</h3>
                     <p>Посети наш пробный урок, и узнай как стать программистом с нуля!</p>
                 </div>
                 <Router>

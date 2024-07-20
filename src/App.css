@@ -123,7 +123,6 @@ main {
 
 nav {
   width: 100%;
-  height: 245px;
   margin-top: 40px;
   margin-bottom: 40px;
   display: flex;
@@ -141,6 +140,17 @@ nav {
 .nav-left h1 {
   font-size: 120px;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+
+.numbers{
+  background: rgb(242,242,242);
+background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 50%, rgba(235,235,235,1) 51%, rgba(253,253,253,1) 100%);
+  padding: 0px 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+  color: black;
 }
 
 .nav-left h3 {
@@ -741,7 +751,6 @@ option {
 
   nav {
     width: 100%;
-    height: 16.8vw;
     margin-top: 2.74vw;
     margin-bottom: 2.74vw;
     display: flex;
@@ -801,6 +810,12 @@ option {
     font-size: 1.64vw;
     font-weight: 400;
     cursor: pointer;
+  }
+
+  .start{
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-size: 3vw;
   }
 
   .wh_button {
@@ -1248,7 +1263,6 @@ option {
 
   nav {
     width: 100%;
-    height: 84.7vw;
     margin-top: 5.2vw;
     margin-bottom: 5.2vw;
     display: flex;
@@ -1264,7 +1278,8 @@ option {
   }
 
   .nav-left h1 {
-    font-size: 15.6vw;
+    font-size: 14.2vw;
+    text-align: center;
     font-weight: 400;
   }
 
@@ -1335,6 +1350,7 @@ option {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
   }
 
   .course_header{

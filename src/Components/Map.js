@@ -13,7 +13,7 @@ const Map = () => {
           zoom: 16, // уровень масштаба карты
         });
         const icon = window.DG.icon({
-          iconUrl: './Assets/logo2.png', // URL вашего изображения
+          iconUrl: '../Assets/logo2.png', // URL вашего изображения
           iconSize: [42, 42], // Размер иконки
           iconAnchor: [21, 42], // Точка привязки иконки (центр снизу)
         });

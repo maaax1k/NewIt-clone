@@ -12,17 +12,17 @@ function Header() {
                 <img src='../Assets/logo.png' alt=""/>
             </div>
             <div class="header-right">
-                <div class="header-facebook">
+                {/* <div class="header-facebook">
                     <img src='../Assets/facebook.png' alt=""/>
                     <a href="#">Facebook</a>
-                </div>
+                </div> */}
                 <div class="header-instagram">
                     <img src='../Assets/insta.png' alt=""/>
-                    <a href="#">Instagram</a>
+                    <a href="https://www.instagram.com/knewit.kz/" target='_blank'>Instagram</a>
                 </div>
                 <div class="header-phone">
                     <img src='../Assets/phone.png' alt=""/>
-                    <a href="#">+7 (701) 938-04-63</a>
+                    <a href="tel:+77019380463">+7 (701) 938-04-63</a>
                 </div>
             </div>
         </div>
