@@ -5,6 +5,8 @@
   font-family: "Inter", sans-serif;
 }
 
+
+
 a {
   color: #5A49F8;
   text-decoration: none;
@@ -37,6 +39,9 @@ a {
   content: '' !important;
 }
 
+.slick-track{
+  height: 400px !important;
+}
 
 body {
   background-color: #F1F1F1;
@@ -85,32 +90,6 @@ header a {
   justify-content: end;
 }
 
-.header-facebook,
-.header-instagram {
-  width: 25%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-}
-
-.header-phone {
-  width: 30%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3px;
-}
-
-.header-facebook img,
-.header-instagram img,
-.header-phone img {
-  width: 18px;
-  height: 18px;
-}
-
 main {
   width: 82%;
   height: 1150px;
@@ -137,12 +116,19 @@ nav {
   flex-direction: column;
 }
 
-.nav-left h1 {
-  font-size: 120px;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
 
+
+
+.number_main{
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  height: 20.8vw;
+  margin-left: 2.6vw;
+  align-items: center;
+  justify-content: center;
+  font-size: 9.7vw;
+}
 
 .numbers{
   background: rgb(242,242,242);
@@ -151,6 +137,12 @@ background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 48
   border-radius: 20px;
   box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
   color: black;
+  width: 28%;
+  font-size: 9.7vw;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-left h3 {
@@ -192,6 +184,19 @@ background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 48
   text-decoration: none;
   font-size: 24px;
   font-weight: 400;
+}
+
+.nav-right a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.nav-right a {
+  width: 277px;
+  height: 45px;
+  border-radius: 28px;
+  border: none;
 }
 
 .wh_button {
@@ -679,6 +684,11 @@ option {
     font-size: 1.07vw;
     font-weight: 700;
     text-decoration: none;
+    transition: 0.3s;
+  }
+
+  header a:hover{
+    color: #d3d3d3;
   }
 
   .header-container {
@@ -688,6 +698,8 @@ option {
     margin-right: auto;
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .header-left {
@@ -705,44 +717,32 @@ option {
   .header-right {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 30%;
     height: 100%;
     color: white;
     font-weight: 700;
-    font-size: 1.09vw;
-    gap: 1.37vw;
-    justify-content: end;
+    font-size: 20px;
+    justify-content: space-between;
   }
 
-  .header-facebook,
-  .header-instagram {
-    width: 25%;
-    height: 100%;
+  .header-phone, .header-instagram{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 0.2vw;
+    justify-content: center;
+    gap: 5px;
   }
 
-  .header-phone {
-    width: 30%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.2vw;
+  .header-phone img{
+    width: 20px;
   }
 
-  .header-facebook img,
-  .header-instagram img,
-  .header-phone img {
-    width: 1.23vw;
-    height: 1.23vw;
+  .header-instagram img{
+    width: 20px;
   }
 
   main {
     width: 82%;
-    height: 78.875vw;
+    height: 92vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -793,6 +793,13 @@ option {
     width: 6.85vw;
   }
 
+  .slick-slide{
+    display: flex !important;
+    align-items: center;
+    height: 250px !important;
+  
+  }
+
   .nav-right p {
     font-size: 2.19vw;
     font-weight: 700;
@@ -805,7 +812,24 @@ option {
     border: none;
   }
 
+  .nav-right a {
+    width: 18.99vw;
+    height: 3vw;
+    border-radius: 1.92vw;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .nav-right button {
+    text-decoration: none;
+    font-size: 1.64vw;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .nav-right a {
     text-decoration: none;
     font-size: 1.64vw;
     font-weight: 400;
@@ -930,7 +954,6 @@ option {
 
   .student-review {
     background-color: #fff;
-    min-height: 120px;
     width: 21.6vw;
     margin-left: 1.37vw;
     padding: 0.68vw;
@@ -1140,6 +1163,29 @@ option {
     font-size: 1.09vw;
   }
 
+  .number_main{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    margin-left: 0;
+  }
+  
+  .numbers{
+    background: rgb(242,242,242);
+  background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 50%, rgba(235,235,235,1) 51%, rgba(253,253,253,1) 100%);
+    padding: 30px 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.3);
+    color: black;
+    font-size: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
 
 }
 
@@ -1172,7 +1218,7 @@ option {
 
   body {
     width: 100%;
-    height: 358.5vw;
+    height: 345vw;
     background-color: #F1F1F1;
   }
 
@@ -1213,48 +1259,36 @@ option {
 
   .header-right {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 70%;
-    height: 100%;
+    height: auto;
     color: white;
     font-weight: 700;
-    gap: 2.6vw;
-    justify-content: end;
+    justify-content: center;
     position: relative;
+    font-size: 14px;
+    align-items: end;
+    gap: 10px;
   }
 
-  .header-facebook,
-  .header-instagram {
-    width: 40%;
-    height: 80%;
+  .header-phone, .header-instagram{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 0.39vw;
-    margin-top: 10%;
+    justify-content: center;
+    gap: 3px;
   }
 
-  .header-phone {
-    width: 39.11vw;
-    height: 13vw;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    position: absolute;
-    gap: 0.39vw;
+  .header-phone img{
+    width: 14px;
   }
 
-
-  .header-facebook img,
-  .header-instagram img,
-  .header-phone img {
-    width: 3.9vw;
-    height: 3.9vw;
+  .header-instagram img{
+    width: 14px;
   }
 
   main {
     width: 82%;
-    height: 247.7vw;
+    height: 256.7vw;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -1303,11 +1337,11 @@ option {
     gap: 3.9vw;
     align-items: center;
     margin-left: 0;
+    margin-top: 10px;
   }
 
   .nav-right img {
     width: 15.6vw;
-    height: 5.2vw;
   }
 
   .nav-right p {
@@ -1323,6 +1357,28 @@ option {
   }
 
   .nav-right button {
+    text-decoration: none;
+    font-size: 4.17vw;
+    font-weight: 400;
+  }
+
+  .nav-right a {
+    width: 78.22vw;
+    height: 9.77vw;
+    border-radius: 4.95vw;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slick-slide{
+    display: block !important;
+    height: auto !important;
+  
+  }
+
+  .nav-right a {
     text-decoration: none;
     font-size: 4.17vw;
     font-weight: 400;
@@ -1346,11 +1402,20 @@ option {
     color: white;
   }
 
+  .start{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 10px;
+    font-size: 6vw;
+
+  }
+
   .course{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 2.6vw;
   }
 
   .course_header{
@@ -1358,8 +1423,9 @@ option {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 2.6vw;
     width: 100%;
+    height: 13vw;
   }
 
 
@@ -1427,13 +1493,13 @@ option {
     height: 11.7vw;
     display: flex;
     align-items: center;
-    margin-top: 10.4vw;
+    margin-top: 10px;
     width: 100%;
   }
 
   .section-title h2 {
-    height: 11.7vw;
-    margin-left: 7.17vw;
+    width: 100%;
+    text-align: center;
   }
 
   .section-reviews {
@@ -1446,6 +1512,7 @@ option {
   .student-review {
     background-color: #fff;
     width: 65.1vw;
+    min-height: 30vw !important;
     margin-left: 5.2vw;
     padding: 1.3vw;
     border-radius: 3.12vw;
@@ -1674,6 +1741,31 @@ option {
     color: #5A49F8;
     font-weight: 500;
     font-size: 2.6vw;
+  }
+  .number_main{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 9.7vw;
+  }
+  
+  .numbers{
+    background: rgb(242,242,242);
+  background: linear-gradient(0deg, rgba(235,235,235,1) 0%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 50%, rgba(235,235,235,1) 51%, rgba(253,253,253,1) 100%);
+    padding: 5px 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.25);
+    color: black;
+    width: auto;
+    font-size: 9.7vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 5px 10px 5px;
   }
 
 

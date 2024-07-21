@@ -9,7 +9,7 @@ const NextArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', backgroundImage: `url("../Assets/back.png")`, backgroundSize: "100%",width: "50px", height: "50px", right: "-50px"}}
+      style={{ ...style, display: 'block', backgroundImage: `url("../Assets/back.png")`, backgroundSize: "100%",width: "50px", height: "50px", right: "-50px", top: "8vw"}}
       onClick={onClick}
     />
   );
@@ -20,7 +20,7 @@ const PrevArrow = (props) => {
   return (
     <div
       className={className}
-      style={{ ...style, display: 'block', backgroundImage: `url("../Assets/back.png")`, backgroundSize: "100%",width: "50px", height: "50px", left: "-50px"}}
+      style={{ ...style, display: 'block', backgroundImage: `url("../Assets/back.png")`, backgroundSize: "100%",width: "50px", height: "50px", left: "-50px", top: "8vw"}}
       onClick={onClick}
     />
   );
